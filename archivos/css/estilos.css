@@ -369,12 +369,20 @@ display: block;
 top: 7em;
 right: 6em;
 width: calc(75% - 7.5em);
-height:calc(100% - 7em);
+height:fit-content;
 padding: 0.4em;
 }
 #upgtag{
-  outline: tomato 1px solid;
   width:fit-content;
-  padding: 0.3em;
+  padding-top: 0.3em;
   top: 1em ;
+  font-size: 4em;
+}
+#upgdesc{
+  width: fit-content;
+  padding-top: 1em;
+  font-size: 2em;
+}
+#divisor{
+  border-top: grey 1px solid;
 }
