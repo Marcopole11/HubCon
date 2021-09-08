@@ -38,7 +38,7 @@ header::before{
   top: -.1em; left: .1em;
   z-index: 50;
   font-size: 4.5em;
-  content: "RtBOT-PiNGA";            /* <---   Aquí el título de la página */
+  content: "HOPE/Con";            /* <---   Aquí el título de la página */
 }
 header::after{
   display: block;
@@ -331,4 +331,50 @@ body[data-virus="1"] .viruspic{
 @keyframes movingBg{
   0%{background-position: 0em 0em;}
   100%{background-position: 5em 5em;}
+}
+/* Mejoras de la nave */
+.mejoras{
+  background-color: var(--discard-text);
+  position: absolute;
+  display: block;
+  top: 7em;
+  left: 0em;
+  width: calc(25% - 2em);
+  height:calc(100% - 8em);
+  overflow-y:scroll;
+  margin: 0; padding: 0;
+  padding-left:2em ;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.mejoras::-webkit-scrollbar {
+  display: none;
+}
+.mejoras li{
+  list-style-type: none;
+  margin: 0; padding: 0;
+  cursor: pointer;
+  font-size: 1.6em ;
+  padding: 0.3em;
+}
+.mejoras li:hover{
+background-color:#A2A2A2  ;
+}
+.ventanamejora{
+background-color: rgba(250, 250, 250, 0.4);
+position: absolute;
+display: block;
+top: 7em;
+right: 6em;
+width: calc(75% - 7.5em);
+height:calc(100% - 7em);
+padding: 0.4em;
+}
+#upgtag{
+  outline: tomato 1px solid;
+  width:fit-content;
+  padding: 0.3em;
+  top: 1em ;
 }
