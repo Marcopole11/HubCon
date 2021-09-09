@@ -221,7 +221,7 @@ msg con::before{
 msg con::after{
   font-size: .8em;
   padding-right: .5em;
-  content: "RtBOT-PiNGA:";
+  content: "HOPE-Con:";
   vertical-align: text-top;
   font-weight: bold;
 }
@@ -277,7 +277,6 @@ body[data-virus="1"] .viruspic{
   background-color: #ddd;
   border: solid 1px var(--inactive-color);
   border-top-width: 1.2em;
-  background-image: url(https://c.tenor.com/cO9yB-vuNQUAAAAd/yay-brushing.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -293,15 +292,6 @@ body[data-virus="1"] .viruspic{
   content: "";
   cursor: pointer;
 }
-#trololo .trol:nth-child(1){top: 5%; left: 5%;}
-#trololo .trol:nth-child(2){top: 10%; left: 10%;}
-#trololo .trol:nth-child(3){top: 15%; left: 15%;}
-#trololo .trol:nth-child(4){top: 20%; left: 20%;}
-#trololo .trol:nth-child(5){top: 25%; left: 25%;}
-#trololo .trol:nth-child(6){top: 30%; left: 30%;}
-#trololo .trol:nth-child(7){top: 35%; left: 35%;}
-#trololo .trol:nth-child(8){top: 40%; left: 40%;}
-#trololo .trol:nth-child(9){top: 45%; left: 45%;}
 
 /* -- Animaciones -- */
 @keyframes corruptCode{

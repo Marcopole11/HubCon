@@ -16,7 +16,7 @@ function newMsg(){
     cMJ.nicks[parseInt(Math.random()*cMJ.nicks.length)]
     +':"></u>';
   let num;
-  switch(parseInt(Math.random()*30)){
+  switch(parseInt(Math.random()*35)){
     case 3: //enviar virus
       mode = 3;
       num  = parseInt(Math.random()*cMJ.virusMsg.length);
@@ -75,7 +75,7 @@ function systemStarted(){
           theMsg.innerHTML = theMsg.innerHTML + " " + '<l t="'+wordn+'" onclick="gotVirus(this)"></l>';
           break;
         case 4:
-          theMsg.innerHTML = theMsg.innerHTML + " " + '<l t="0" ref="'+cMJ.trollMsg[wordn].pic+'"  txt="'+cMJ.trollMsg[wordn].link+'"></l>';
+          theMsg.innerHTML = theMsg.innerHTML + " " + '<l t="0" txt="'+cMJ.trollMsg[wordn].link+'" onclick="openTrol('+wordn+')"></l>';
           break;
       }
       if(aviso > 0){
@@ -102,9 +102,17 @@ function closeWindow(that, ev){
     that.style.display = "none";
   }
 }
-function openTrol(i){
-  let ventana = document.getElementById
-  setTimeout(()=>{openWindow(i+1)},200);
+function openTrol(wordn){
+  let pic = "url("+cMJ.trollMsg[wordn].pic+")";
+  let ventanas = document.getElementById("trololo").querySelectorAll(".trol");
+  function trolRecursive(i){
+    if(i < 11){
+      ventanas[i].style.backgroundImage = pic;
+      ventanas[i].style.display = "block";
+      setTimeout(()=>{trolRecursive(i+1)},140);
+    }
+  }
+  trolRecursive(0);
 }
 
 function addMsg(msg){
@@ -116,6 +124,14 @@ function cargado(that){
     let num = i+1;
     li.addEventListener("mouseover",()=>{aviso=num;});
   });
+  let ventanasTrol = "";
+  for(i=1;i<12;i++){
+    ventanasTrol+= '<div class="trol" onclick="closeWindow(this,event)" style="display:none; top: '
+    +5*i+'%; left: '
+    +5*i+'%;"></div>';
+  }
+  document.getElementById("trololo").innerHTML = ventanasTrol;
+
   theMsg = document.createElement("MSG");
   theMsg.setAttribute("t","1");
   addMsg(theMsg);

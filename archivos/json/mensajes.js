@@ -53,6 +53,11 @@ var cMJ =
       txt: "Tengo la cura del Corona, te la paso pero no se lo digas a nadie",
       link: "fpt.darklink.icu",
       pic: "https://c.tenor.com/cO9yB-vuNQUAAAAd/yay-brushing.gif"
+    },
+    {
+      txt: "Chica caliente en tu zona, consigue una prueba gratis por una noche en las próximas 24h:",
+      link: "www.sweetcherry.com",
+      pic: "https://c.tenor.com/k4fza8gMugEAAAAC/smart-thinking.gif"
     }
   ],
   chatMsg: [ // mensajes shitpost
