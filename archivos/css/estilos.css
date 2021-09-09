@@ -394,3 +394,22 @@ padding: 0.4em;
  height: 2em;
  padding-left: 0.1em ;
 }
+
+
+/*Recursos*/
+#recursosmain{
+  outline: tomato 1px solid;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 7em;
+  left: 0;
+}
+
+.card{
+  outline:blue 1px solid;
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  margin: 2em;
+}
