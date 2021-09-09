@@ -352,11 +352,10 @@ body[data-virus="1"] .viruspic{
 #mejoras li:hover{
 background-color:#A2A2A2  ;
 }
-.ventanamejora{
-background-color: rgba(250, 250, 250, 0.4);
+#ventanamejora{
+  background-color: rgba(250, 250, 250, 0.4);
 padding-left:0.6em ;
 position: absolute;
-display: block;
 top: 7em;
 right: 6em;
 width: calc(75% - 7.8em);
@@ -364,20 +363,26 @@ height:fit-content;
 padding: 0.4em;
 }
 #upgtag{
-  width:fit-content;
+  width:100%;
   padding-left: 0.1em ;
   padding-top: 0.3em;
   top: 1em ;
   font-size: 4em;
+  border-bottom: grey 1px solid;
 }
 #upgdesc{
-  width: fit-content;
+  width:100%;
   padding-left: 0.1em ;
   padding-top: 1em;
   font-size: 2em;
+  border-bottom: grey 1px solid;
 }
-#divisor{
-  border-top: grey 1px solid;
+#upgneed{
+  width:100%;
+  padding-left: 0.1em ;
+  padding-top: 1em;
+  font-size: 2em;
+  border-bottom: grey 1px solid;
 }
 #back{
  position: absolute;
