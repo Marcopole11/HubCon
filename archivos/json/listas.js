@@ -15,17 +15,17 @@ var elm={
     ],
     recursos:[
         {
-        reservas:"1",
+        reservas:"COSA 1",
         descripcion:"2",
         tipo:"3"
          },
     {
-        reservas:"1",
+        reservas:"COSA 2",
         descripcion:"2",
         tipo:"3"
         },
     {
-        reservas:"1",
+        reservas:"COSA 3",
         descripcion:"2",
         tipo:"3"
         }
