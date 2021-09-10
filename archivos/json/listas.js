@@ -15,19 +15,19 @@ var elm={
     ],
     recursos:[
         {
-        reservas:"a",
-        descripcion:"e",
-        tipo:"i"
+        reservas:"1",
+        descripcion:"2",
+        tipo:"3"
          },
     {
-        reservas:"a",
-        descripcion:"e",
-        tipo:"i"
+        reservas:"1",
+        descripcion:"2",
+        tipo:"3"
         },
     {
-        reservas:"a",
-        descripcion:"e",
-        tipo:"i"
+        reservas:"1",
+        descripcion:"2",
+        tipo:"3"
         }
     ]
 }
