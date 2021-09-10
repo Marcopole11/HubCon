@@ -324,7 +324,7 @@ body[data-virus="1"] .viruspic{
 }
 /* Mejoras de la nave */
 #mejoras{
-  background-color: var(--discard-text);
+  background-color: var(--main-color);
   position: absolute;
   display: block;
   top: 7em;
