@@ -1,7 +1,12 @@
 function cargado (){
     let cadena=""; 
     elm.recursos.forEach((el,i)=>{
-        cadena += '<div class="card"('+i+')>'+el.reservas+"<br>"+el.descripcion+"<br>"+el.tipo+'</div>';
+        cadena += 
+        '<div class="card"(`+i+`)>'+
+             '<div id="nres">'+el.reservas+'</div>'+
+             '<div id="descres">'+el.descripcion+'</div>'+
+             '<div id="restyp">'+el.tipo+'</div>'+
+             '</div>';
     });
     document.getElementById("recursosmain").innerHTML=cadena;
 
