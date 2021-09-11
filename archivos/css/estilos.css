@@ -405,15 +405,88 @@ padding: 0.4em;
   width: 100%;
   top: 7em;
   left: 0;
+  text-align: center;
 }
 
 .card{
-  background-color: rgba(85, 85, 85, 0.4);
-  outline: rgba(51, 50, 50, 0.4) 2px solid;
+  
+  
   display: inline-block;
   width: 20em;
-  height: 8em;
-  margin: 2em;
-  padding: 1em;
+  height: 15em;
+  margin: 1.5em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
   
+ 
 }
+.nres{
+  position:relative;
+  text-align: center;
+  height: 15em;
+  width: calc(100%-1em);
+  font-size: 1.4em;
+  overflow: hidden;
+}
+
+.nres::before{
+  display: block;
+  position: absolute;
+  padding-top: 0.1em;
+  content:attr(txt);
+  top:0;
+  left:0 ;
+  width: 100%;
+  height: fit-content;
+  z-index: 50;
+  text-align: left;
+  padding-left: 1em;
+}
+.nres::after{
+  background-color: gray;
+  transform: skewX(45deg);
+  display: block;
+  position: absolute;
+  content:"";
+  top:0em;
+  left:-2em ;
+  width: calc(100% + 2em);
+  height:1.9em;
+}
+
+.descres{
+  border-bottom: rgba(0, 0, 0, 0.801) 1px solid;
+  overflow-y:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  height: calc(99% - 1em);
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  text-align: left;
+  top:-1em;
+}
+.descres::-webkit-scrollbar {
+display: none;
+}
+
+
+.restyp{
+ 
+  margin-left: 1em;
+  margin-bottom: 0em;
+  text-align: left;
+}
+
+.datos{
+  position: absolute;
+  background-color: rgba(85, 85, 85, 1);
+  border-radius: 10px;
+  width: 100%;
+  height: calc(100% - 6em);
+  z-index: 39;
+  left:0;
+  top:calc(1.5em - 10px)
+}
+
+

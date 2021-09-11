@@ -1,4 +1,5 @@
 function elgmejora (i){
+    console.log(document.getElementById("mejoras"));
     document.getElementById("ventanamejora").style.display="block";
     document.getElementById("upgtag").innerHTML=elm.mejora[i].titulo;
     document.getElementById("upgdesc").innerHTML=elm.mejora[i].desc;
