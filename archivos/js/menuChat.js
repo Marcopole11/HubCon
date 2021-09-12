@@ -118,8 +118,41 @@ function openTrol(wordn){
 function addMsg(msg){
   document.getElementById("chatbox").appendChild(theMsg);
 }
+
+function cambiardinero(e){
+  console.log(e);
+  if(e.key=="Enter"){
+  let dinerofin= 
+  parseInt(document.getElementById("dinerobox").dataset.dinero)
+  + document.getElementById("dinero").value;  
+  document.getElementById("dinerobox").dataset.dinero=dinerofin;
+  document.getElementById("dinero").value= 0;
+  localStorage.setItem("dinero",dinerofin);
+  console.log(dinerofin);
+  }
+}
+
+
+
 function cargado(that){
   body = that;
+  
+  //dinerito rico//
+  let tengodinero = 0;
+
+  if(localStorage.getItem("dinero")==null){
+    localStorage.setItem("dinero",0);
+  } else  {
+    tengodinero = localStorage.getItem("dinero");
+  }
+  document.getElementById("dinerobox").dataset.dinero=tengodinero;
+
+
+
+  
+  
+  //chat//
+
   document.getElementById("apartad").querySelectorAll("a").forEach((li,i)=>{
     let num = i+1;
     li.addEventListener("mouseover",()=>{aviso=num;});
@@ -159,3 +192,4 @@ function cargado(that){
     }
   },50);
 }
+
