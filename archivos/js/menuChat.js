@@ -124,7 +124,7 @@ function cambiardinero(e){
   if(e.key=="Enter"){
   let dinerofin= 
   parseInt(document.getElementById("dinerobox").dataset.dinero)
-  + document.getElementById("dinero").value;  
+  + parseInt(document.getElementById("dinero").value);  
   document.getElementById("dinerobox").dataset.dinero=dinerofin;
   document.getElementById("dinero").value= 0;
   localStorage.setItem("dinero",dinerofin);

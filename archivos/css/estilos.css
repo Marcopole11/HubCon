@@ -499,13 +499,29 @@ display: none;
 
 #dinerobox::before {
   display:inline-block;
-  outline: tomato 1px solid;
-  content:attr("data-dinero");
-  width: 2em;
-  height: 2em;
+  content:attr(data-dinero);
+  width: fit-content;
+  height: 1em;
+  margin-right: 2em;
+  padding: 0.3em;
+  color:white;
+}
+#dinerobox::after {
+display:block;
+position:absolute;
+top:0.4em;
+right:3.5em;
+width: 1em;
+height: 1em;
+background-image:url(../img/icomana.png);
+background-size: contain;
+z-index: 55;
+content:"";
+
 }
 
 #dinero{
   display: inline-block;
   z-index: 55;
+  width:3em ;
 }
