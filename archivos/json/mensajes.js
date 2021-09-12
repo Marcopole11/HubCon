@@ -35,7 +35,7 @@ var cMJ =
 
   ],
   sectInfo: [ //Información de la consola al pasar sobre las opciones
-    "Bienvenido, Lancer. Esperando commando...",
+    "Bienvenido, Lancer. Esperando comando...",
     "Buscar en la BBDD de macros LANCER, mejoras de equipo e impresora.",
     "Consultar formas de recuperarte y recargar para no abandonar el objetivo.",
     "Registro personal de Mecha, Art-433 solo uno en angar, alternativa de listado."

@@ -22,7 +22,7 @@ function newMsg(){
       num  = parseInt(Math.random()*cMJ.virusMsg.length);
       words = cMJ.virusMsg[num].split(" ");
       wordn = num+1;
-      break;
+      break;ia
     case 4: //enviar enlace trol
       mode = 4;
       num  = parseInt(Math.random()*cMJ.trollMsg.length);

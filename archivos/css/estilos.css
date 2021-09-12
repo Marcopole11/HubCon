@@ -324,7 +324,7 @@ body[data-virus="1"] .viruspic{
 }
 /* Mejoras de la nave */
 #mejoras{
-  background-color: var(--discard-text);
+  background-color: var(--main-color);
   position: absolute;
   display: block;
   top: 7em;
@@ -353,7 +353,7 @@ body[data-virus="1"] .viruspic{
 background-color:#A2A2A2  ;
 }
 #ventanamejora{
-  background-color: rgba(250, 250, 250, 0.4);
+background-color: rgba(250, 250, 250, 0.4);
 padding-left:0.6em ;
 position: absolute;
 top: 7em;
@@ -394,3 +394,99 @@ padding: 0.4em;
  height: 2em;
  padding-left: 0.1em ;
 }
+
+
+/*Recursos*/
+#recursosmain{
+  background-color: rgba(250, 250, 250, 0.4);
+  outline: rgba(211, 211, 211, 0.4) 2px solid;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 7em;
+  left: 0;
+  text-align: center;
+}
+
+.card{
+  
+  
+  display: inline-block;
+  width: 20em;
+  height: 15em;
+  margin: 1.5em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  
+ 
+}
+.nres{
+  position:relative;
+  text-align: center;
+  height: 15em;
+  width: calc(100%-1em);
+  font-size: 1.4em;
+  overflow: hidden;
+}
+
+.nres::before{
+  display: block;
+  position: absolute;
+  padding-top: 0.1em;
+  content:attr(txt);
+  top:0;
+  left:0 ;
+  width: 100%;
+  height: fit-content;
+  z-index: 50;
+  text-align: left;
+  padding-left: 1em;
+}
+.nres::after{
+  background-color: gray;
+  transform: skewX(45deg);
+  display: block;
+  position: absolute;
+  content:"";
+  top:0em;
+  left:-2em ;
+  width: calc(100% + 2em);
+  height:1.9em;
+}
+
+.descres{
+  border-bottom: rgba(0, 0, 0, 0.801) 1px solid;
+  overflow-y:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  height: calc(99% - 1em);
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  text-align: left;
+  top:-1em;
+}
+.descres::-webkit-scrollbar {
+display: none;
+}
+
+
+.restyp{
+ 
+  margin-left: 1em;
+  margin-bottom: 0em;
+  text-align: left;
+}
+
+.datos{
+  position: absolute;
+  background-color: rgba(85, 85, 85, 1);
+  border-radius: 10px;
+  width: 100%;
+  height: calc(100% - 6em);
+  z-index: 39;
+  left:0;
+  top:calc(1.5em - 10px)
+}
+
+
