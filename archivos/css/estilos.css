@@ -481,6 +481,7 @@ display: none;
 .datos{
   position: absolute;
   background-color: rgba(85, 85, 85, 1);
+  color:rgb(211, 211, 211);
   border-radius: 10px;
   width: 100%;
   height: calc(100% - 6em);
